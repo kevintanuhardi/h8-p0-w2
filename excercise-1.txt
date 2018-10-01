@@ -14,7 +14,9 @@ DISPLAY "Sigma Force"
 
 STORE "tahun" to any number
 
-IF ( (tahun % 4 == 0 && tahun % 100 !== 0) ||(tahun % 4 == 0 && tahun % 100 = 0 && tahun % 400 ==0) )
+IF tahun % 4 == 0 && tahun % 100 !==  
+	DISPLAY "Tahun Kabisat"
+IF tahun % 4 == 0 && tahun % 100 = 0 && tahun % 400 ==0
 	DISPLAY "Tahun Kabisat"
 ELSE
 	DISPLAY "Bukan Tahun Kabisat"
@@ -32,6 +34,7 @@ DO "nyalakan mesin Cuci"
 ---
 4. PERIKSA KUKU
 
+--Psudocode
 STORE "Murid" to 1
 STORE "kukuMurid"
 
@@ -41,4 +44,12 @@ While "murid" < 41
 	ELSE
 		DO " puji siswa/siswi"
 
-	
+
+--Algoritma
+
+Simpan Murid jadi 1;
+Lihat kuku dari Murid;	
+
+Cek kuku murid 1 - 40
+	Jika kuku murid panjang, maka hukum siswa/siswi
+	Jika kuku murid pendek, maka puji sista/siswi
